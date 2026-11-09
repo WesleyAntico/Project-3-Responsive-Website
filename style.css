@@ -94,3 +94,93 @@ You can change the 100px as needed, just change it in both padding-bottom and wi
   padding: var(--space-2);
   text-align: center;
 }
+
+/* ------------------
+Landmark Pages Layout
+------------------- */
+
+.directions-link{
+display: flex;
+padding: var(--space-3);
+background-color: var(--action);
+color: var(--button-text);
+text-align: center;
+border-radius: var(--border-radius);
+}
+
+.directions-links{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: var(--space-4);
+padding: 0;
+margin: 0;
+}
+
+/* Page Area Styling */
+
+.landmark-information, .landmark-intro, .landmark-more-images{
+ margin: var(--space-8) 0;
+}
+
+#pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+.landmark-about {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media (min-width: 600px){
+      /* this applies to mobile in landscape and some tablets in portrait */
+.landmark-more-images{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}/*   end min-width 900 */
+}/*   end min-width 600 */
+
+  
+
+@media (min-width: 900px){
+      /* this applies to tablets */
+.landmark-intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+.landmark-information{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-6);
+}
+.landmark-more-images{
+  grid-template-columns: repeat(3, 1fr);
+}
+.featured-landmark{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+.featured-landmark picture{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+  }
+}
+/*   end min-width 900 */
+
+
+
+@media (min-width: 1200px){
+      /* this applies average laptops */
+
+}/*   end min-width 1200 */
+
+  
+@media (min-width: 1800px){
+      /* this applies to very large screens */
+
+}/*   end min-width 1800 */
