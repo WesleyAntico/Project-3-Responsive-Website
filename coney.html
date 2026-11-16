@@ -4,47 +4,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coney Island - Wonder Wheel</title>
+  <title>Landmark: Wonder Wheel</title>
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="landmark-page">
   <header>
-    <div class="site-title">NYC Landmarks</div>
+    <div class="topbar">
+      <div class="site-title"><a href="/">NYC Landmarks</a></div>
+      <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul id="menu" class="menu">
+        <li><a href="liberty.html">Statue of Liberty</a></li>
+        <li><a href="empire.html">Empire State Building</a></li>
+        <li><a href="ferry.html">Staten Island Ferry</a></li>
+        <li><a href="yankee.html">Yankee Stadium</a></li>
+        <li><a href="tram.html">Roosevelt Island Tram</a></li>
+        <li><a href="coney.html" aria-current="page">Wonder Wheel</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-      <h1>Wonder Wheel - Coney Island</h1>
-      <p class="intro">Coney Island is a historic seaside amusement area in Brooklyn, New York, known for its iconic rides and boardwalk. The Wonder Wheel is one of its most famous attractions.</p>
-      <div class="featured-landmark">
-        <h2>Featured Landmark</h2>
-        <figure>
-          <picture>
-            <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
-            <source media="(max-width: 644px)"
-              srcset="images/square/pexels-kelsey-caroline-774981359-19122990_square.jpg">
-            <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
-              alt="Wonder Wheel ferris wheel at Coney Island">
-          </picture>
-          <figcaption><a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by Kelsey Caroline</a></figcaption>
-        </figure>
-        <p>The Wonder Wheel is the iconic ferris wheel at Deno’s Wonder Wheel Amusement Park in Coney Island, Brooklyn.
-          Standing 150 feet tall, it has been a centerpiece of the boardwalk skyline since its debut in 1920.</p>
-        <p>Coney Island has been a hub of seaside amusement for more than a century, known for its thrilling rides, bright
-          lights, and summertime energy. From the historic Cyclone roller coaster to modern attractions, it remains one of
-          New York City’s most beloved destinations for fun by the beach.</p>
-        </div>
+    <section class="landmark-intro">
+      <!-- INTRO -->
+      <div class="ladnmark-intro_text">
+        <h1>Wonder Wheel</h1>
+        <p class="tagline">A century-old Ferris wheel that still lights up the Coney Island skyline.</p>
+        <p>Rising above the boardwalk since 1920, the Wonder Wheel is one of New York City’s most beloved seaside icons.
+          A ride in one of its cars offers 15-story-high views of the Atlantic and the vibrant energy of Coney Island.
+        </p>
+      </div>
+      <!-- HERO IMAGE -->
+      <figure>
+        <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
+          alt="Wonder Wheel entrance on a cloudless sunny day">
+        <figcaption><a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by Kelsey
+            Caroline</a></figcaption>
+      </figure>
+    </section>
+
+    <div class="landmark-information">
+      <section class="landmark-about">
+        <!-- DESCRIPTION (About info) -->
+        <h2>About</h2>
+        <p><strong>Built:</strong> The Wonder Wheel was built in 1920 by the Eccentric Ferris Wheel Company and has
+          operated continuously ever since. It became a New York City Landmark in 1989 and is still family-run by the
+          Vourderis family as part of Deno’s Wonder Wheel Amusement Park.</p>
+        <p><strong>Today:</strong> It remains a centerpiece of <a href="https://www.denoswonderwheel.com/"
+            target="_blank" rel="noopener">Deno’s Wonder Wheel Amusement Park</a>, open seasonally from spring
+          through fall. It features 24 passenger cars—some fixed, some sliding—and provides views of the ocean, beach,
+          and surrounding amusement district.</p>
+        <!-- MORE INFO  -->
+        <h2>More Info</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Wonder_Wheel" target="_blank" rel="noopener">Wikipedia: Wonder
+              Wheel</a></li>
+          <li><a href="https://www.nycgovparks.org/parks/coney-island-beach-and-boardwalk/history" target="_blank"
+              rel="noopener">NYC Parks – Coney Island</a></li>
+        </ul>
+        <!-- DIRECTIONS  -->
+      </section>
+      <aside class="landmark-directions">
+        <h2 id="directions-title">Directions</h2>
+        <p>Go to Deno’s Wonder Wheel Amusement Park at 3059 West 12th Street, Brooklyn, near the Coney Island Boardwalk.
+        </p>
+        <ul class="directions-links">
+          <li>
+            <a class="directions-link"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=Deno%27s%20Wonder%20Wheel%20Amusement%20Park%2C%203059%20West%2012th%20Street%2C%20Brooklyn%2C%20NY%2011224">Get
+              directions in Google Maps</a>
+          </li>
+          <li>
+            <a class="directions-link"
+              href="https://maps.apple.com/directions?destination=Deno%27s%20Wonder%20Wheel%20Amusement%20Park%2C%203059%20West%2012th%20Street%2C%20Brooklyn%2C%20NY%2011224">Get
+              directions in Apple Maps</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+
+    <div class="landmark-more-images">
+      <!-- Additional images -->
+      <figure>
+        <img src="images/square/pexels-kyle-miller-169884138-27462439_sq.jpg"
+          alt="A man walking away from the wonder wheel which is in full view.">
+        <figcaption><a href="https://www.pexels.com/photo/a-man-walking-past-a-ferris-wheel-27462439/">Photo by Kyle
+            Miller</a></figcaption>
+      </figure>
+      <figure>
+        <img src="images/square/pexels-clement-proust-363898785-24730360_sq.jpg" alt="Wonder wheel at sunset">
+        <figcaption><a href="https://www.pexels.com/photo/denos-wonder-wheel-amusement-park-24730360/">Photo by
+            Clément Proust</a></figcaption>
+      </figure>
+      <figure>
+        <img src="images/square/pexels-dimitry-mak-1310041547-30911091_sq.jpg"
+          alt="Night view of the Wonder Wheel lit with neon">
+        <figcaption><a
+            href="https://www.pexels.com/photo/colorful-summer-day-at-coney-island-amusement-park-30911091/">Photo
+            by Dimitry Mak</a></figcaption>
+      </figure>
+    </div>
+
+    <!-- PREV/NEXT BUTTONS -->
     <nav id="pagination" aria-label="Landmark navigation">
-      <a class="btn" rel="prev" href="ferry.html">← Previous: Staten Island Ferry</a>
-      <a class="btn" rel="next" href="yankee.html">Next: Yankee Stadium →</a>
+      <a class="btn" rel="prev" href="tram.html">← Previous</a>
+      <a class="btn" rel="next" href="liberty.html">Next →</a>
     </nav>
   </main>
 
   <footer>
     <p>Site by Wesley Antico</p>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

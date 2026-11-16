@@ -11,7 +11,23 @@
 
 <body>
   <header>
-    <div class="site-title">NYC Landmarks</div>
+    <div class="topbar">
+      <div class="site-title"><a href="/">NYC Landmarks</a></div>
+      <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul id="menu" class="menu">
+        <li><a href="liberty.html">Statue of Liberty</a></li>
+        <li><a href="empire.html">Empire State Building</a></li>
+        <li><a href="ferry.html">Staten Island Ferry</a></li>
+        <li><a href="yankee.html">Yankee Stadium</a></li>
+        <li><a href="tram.html">Roosevelt Island Tram</a></li>
+        <li><a href="coney.html">Wonder Wheel</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -118,7 +134,7 @@
   <footer>
     <p>Site by Wesley Antico</p>
   </footer>
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
