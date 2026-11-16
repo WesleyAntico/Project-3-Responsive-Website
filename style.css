@@ -217,6 +217,26 @@ header {
   color: var(--clr-nav);
 }
 
+.site-title a,
+.site-title a:hover,
+.site-title a:focus-visible {
+  color: #ffffff;
+}
+
+#pagination .btn {
+  padding: var(--space-3) var(--space-4);
+  border-radius: 6px;
+  background: var(--clr-nav-background);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#pagination .btn:hover,
+#pagination .btn:focus-visible {
+  background: var(--clr-nav-hover);
+  color: #ffffff;
+}
+
 /* Top row: logo + hamburger aligned horizontally */
 .topbar {
   display: flex;
