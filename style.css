@@ -164,7 +164,7 @@ margin: 0;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-6);
 }
-.featured-landmark picture{
+.featured-landmark figure{
     grid-column: 2;
     grid-row: 1 / span 3;
     align-self: center;

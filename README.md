@@ -26,7 +26,7 @@ People who want information about some of New York City's major landmarks. They 
 A responsive NYC landmarks website with **seven pages total**:
 
 - One home page, `index.html`.
-- Six individual landmark pages, with landmark text, images, and links.
+- Six individual landmark pages: `liberty.html`, `empire.html`, `ferry.html`, `coney.html`, `yankee.html`, and `tram.html`.
 
 The site architecture is defined in the `site-map.md` file.
 
@@ -39,12 +39,12 @@ The site is an informational guide. Ticket booking, accounts, live transit data,
 | Page | Content |
 | --- | --- |
 | Home | Introduction to NYC landmarks, embedded video, featured landmark image and text, and six credited landmark cards linking to their pages. |
-| Statue of Liberty | Introduction, hero image, About text covering its history and present use, and More Info links including visitor information and directions. |
-| Empire State Building | Introduction, hero image, About text covering its history and present use, and More Info links including visitor information. |
-| Staten Island Ferry | Introduction, hero image, About text covering its history and present use, and More Info links including schedules and directions. |
-| Wonder Wheel | Introduction, hero image, About text covering its history and present use, and More Info links. Additional landmark images where applicable. |
-| Yankee Stadium | Introduction, hero image, About text covering its history and present use, and More Info links including the visitor reference guide. |
-| Roosevelt Island Tramway | Introduction, hero image, About text covering its history and present use, and More Info links including riding information and directions. |
+| Statue of Liberty (`liberty.html`) | Introduction, hero image, About text covering its history and present use, and More Info links including visitor information and directions. |
+| Empire State Building (`empire.html`) | Introduction, hero image, About text covering its history and present use, and More Info links including visitor information. |
+| Staten Island Ferry (`ferry.html`) | Introduction, hero image, About text covering its history and present use, and More Info links including schedules and directions. |
+| Coney Island (`coney.html`) | Featured Wonder Wheel image and Coney Island description. |
+| Yankee Stadium (`yankee.html`) | Introduction, hero image, About text covering its history and present use, and More Info links including the visitor reference guide. |
+| Roosevelt Island Tramway (`tram.html`) | Introduction, hero image, About text covering its history and present use, and More Info links including riding information and directions. |
 
 Preserve the landmark text, links, and photo credits.
 
